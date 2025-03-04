@@ -10,10 +10,9 @@ function Header() {
       </Link>
       <nav>
         <ul className="nav-links">
-          <li><Link to="servicios" smooth={true} duration={500} offset={-80} className="nav-item">Servicios</Link></li>
-          <li><Link to="planes" smooth={true} duration={500} offset={-80} className="nav-item">Planes</Link></li>
-          <li><Link to="metodologia" smooth={true} duration={500} offset={-80} className="nav-item">Metodología</Link></li>
-          <li><Link to="clientes" smooth={true} duration={500} offset={-80} className="nav-item">Clientes</Link></li>
+          <li><Link to="aboutUs" smooth={true} duration={500} offset={-80} className="nav-item">About Us</Link></li>
+          <li><Link to="comunidad" smooth={true} duration={500} offset={-80} className="nav-item">Comunidad</Link></li>
+          <li><Link to="proyectos" smooth={true} duration={500} offset={-80} className="nav-item">Proyectos</Link></li>
           <li><Link to="contacto" smooth={true} duration={500} offset={-80} className="nav-item">Contacto</Link></li>
         </ul>
       </nav>

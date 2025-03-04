@@ -1,7 +1,7 @@
-function Clientes() {
+function Proyectos() {
     return (
-      <section className="section" id="clientes">
-        <h2>Clientes</h2>
+      <section className="section" id="proyectos">
+        <h2>Proyectos</h2>
         <p>Empresas y emprendedores que han confiado en nosotros.</p>
         <br />
         <br />
@@ -29,5 +29,5 @@ function Clientes() {
     );
   }
   
-  export default Clientes;
+  export default Proyectos;
   
