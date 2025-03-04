@@ -1,0 +1,35 @@
+/* styles.css */
+
+/* Reset de márgenes y padding globales */
+
+
+/* Establecer las reglas base para el body */
+body {
+  font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor principal de la aplicación */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden; /* Evita el desbordamiento del contenido */
+}
+
+/* Contenedor del contenido principal (secciones, header, etc.) */
+.main-content {
+  flex: 1;
+  overflow-y: auto; /* Desplazamiento vertical si es necesario */
+  padding-top: 20vh;
+
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

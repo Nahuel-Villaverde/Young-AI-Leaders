@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../assets/fonts/Urbanist-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../assets/fonts/Urbanist-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../assets/fonts/Urbanist-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+}
+  
+.services-container{
+    font-family: 'Urbanist', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vw;
+    align-items: stretch;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.services-container h2{
+    font-size: 46px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.services-cards-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5vw;
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 30px;
+    background-color: rgba(217, 217, 217, 0.15); /* Fondo de color inicial */
+    background-image: none; /* Sin imagen de fondo al principio */
+    border-radius: 30px;
+    color: #FFFFFF;
+    justify-content: space-between;
+    flex-grow: 1;
+    min-height: 350px;
+    max-width: 350px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.8s ease, background-image 0.8s ease, background-position 0.8s ease; /* Transición más suave */
+    cursor: default;
+}
+
+/* Hover para la primera tarjeta */
+.services-card:nth-child(1):hover {
+    background-color: rgba(217, 217, 217, 0.20); /* Fondo oscuro cuando se hace hover */
+    background-image: url('../../public/Rectangle12.png'); /* Imagen de fondo en hover */
+    background-size: cover; /* Ajusta la imagen al tamaño de la tarjeta */
+    background-position: center; /* Centra la imagen */
+}
+/* Hover específico para la segunda tarjeta */
+.services-card:nth-child(2):hover {
+    background-color: rgba(217, 217, 217, 0.20); /* Fondo oscuro cuando se hace hover */
+    background-image: url('../../public/Rectangle27.png'); /* Imagen de fondo en hover */
+    background-size: cover; /* Ajusta la imagen al tamaño de la tarjeta */
+    background-position: center; /* Centra la imagen */
+}
+
+/* Hover específico para la tercera tarjeta */
+.services-card:nth-child(3):hover {
+    background-color: rgba(217, 217, 217, 0.20); /* Fondo oscuro cuando se hace hover */
+    background-image: url('../../public/Rectangle28.png'); /* Imagen de fondo en hover */
+    background-size: cover; /* Ajusta la imagen al tamaño de la tarjeta */
+    background-position: center; /* Centra la imagen */
+}
+
+/* Hover específico para la cuarta tarjeta */
+.services-card:nth-child(4):hover {
+    background-color: rgba(217, 217, 217, 0.20); /* Fondo oscuro cuando se hace hover */
+    background-image: url('../../public/Rectangle29.png'); /* Imagen de fondo en hover */
+    background-size: cover; /* Ajusta la imagen al tamaño de la tarjeta */
+    background-position: center; /* Centra la imagen */
+}
+
+
+.services-card h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 1vh;
+    align-self: flex-start;
+    max-width: 200px;
+}
+
+.services-card p {
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 500px;
+    margin-top: 0; /* Elimina el margen superior */
+    margin-bottom: auto; /* Esto asegura que los párrafos se ajusten y empujen el botón hacia abajo */
+}
+
+.services-card button {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    font-size: 14px; 
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borde blanco con opacidad al 20% */
+    background-color: transparent; 
+    color: #FFFFFF;
+    padding: 8px 20px; 
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    width: 60%;
+    margin-top: 3vh; /* Separación del párrafo al botón */
+}
+
+.services-card button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000; 
+}
+
+.services-card button:focus {
+    outline: none;
+}

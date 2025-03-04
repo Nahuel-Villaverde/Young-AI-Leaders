@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../assets/fonts/Urbanist-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../assets/fonts/Urbanist-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('../assets/fonts/Urbanist-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+  }
+
+.home-container{
+    margin-top: 7vh;
+    margin-bottom: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-title{
+    font-family: 'Urbanist', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+.home-title span{
+    display: block;
+}
+
+.home-title span:nth-child(1) {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 64px;
+}
+
+.home-title span:nth-child(2) {
+    color: #FF8C00;
+    font-weight: 600;
+    text-shadow: 0px 0px 50px rgba(255, 140, 0, 0.813);
+    font-size: 64px;
+}
+
+.home-subtitle{
+    font-family: 'Urbanist', sans-serif;
+    color: #939393;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: default;
+}
+
+.pre-title{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    color: #DCDCDC;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 4px 18px ;
+    font-size: 12px;
+    cursor: default;
+}
+
+.home-buttons {
+    width: 100%;
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    margin-top: 8vh;
+}
+
+.home-buttons button:nth-child(1) {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    min-width: 280px;
+    border-radius: 30px;
+    background-color: #FF8C00;
+    box-shadow: 0px 0px 70px rgba(255, 140, 0, 0.40);
+    transition: transform 0.7s ease, box-shadow 0.2s ease;
+}
+
+.home-buttons button:nth-child(1):hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 90px rgba(255, 140, 0, 0.65);
+    border: none;
+}
+
+.home-buttons button:nth-child(2) {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    min-width: 280px;
+    border-radius: 30px;
+    background-color: #00000000;
+    border: 2px solid white;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.3s ease;
+}
+
+.home-buttons button:nth-child(2):hover {
+    border: 2px solid #FF8C00;
+}
