@@ -3,14 +3,14 @@ import './Home.css';
 function Home() {
   return (
     <section className="section home-container" id="home">
-      <div>
-      <h1>Young AI Leaders</h1>
-      <h2>Impulsando la IA para el Bien</h2>
-      <span>Colaboración e innovación global en inteligencia artificial</span>
+      <img src="../../public/fondo-delante.png" alt="Imagen Delante" className="image-overlay" />
 
-      <button>Únete a la comunidad</button>
+      <div className='home-content'>
+        <h1>Young AI Leaders</h1>
+        <h2>Impulsando la IA para el Bien</h2>
+        <span>Colaboración e innovación global en inteligencia artificial</span>
+        <button>Únete a la comunidad</button>
       </div>
-      
     </section>
   );
 }

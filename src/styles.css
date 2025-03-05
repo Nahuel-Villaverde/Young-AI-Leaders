@@ -22,8 +22,6 @@ body {
 .main-content {
   flex: 1;
   overflow-y: auto; /* Desplazamiento vertical si es necesario */
-  padding-top: 20vh;
-
 }
 
 /* Footer */
