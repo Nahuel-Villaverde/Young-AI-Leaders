@@ -5,8 +5,7 @@ function Header() {
   return (
     <header className="header">
       <Link to="home" smooth={true} duration={500} offset={-200} className="logo-container">
-        <div className="logo-bar"></div>
-        <span className="logo">YANA</span>
+        <img src="/Logo-YoungAi.png" alt="Logo Young Ai" />
       </Link>
       <nav>
         <ul className="nav-links">

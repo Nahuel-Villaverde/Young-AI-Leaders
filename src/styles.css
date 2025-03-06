@@ -21,7 +21,6 @@ body {
 /* Contenedor del contenido principal (secciones, header, etc.) */
 .main-content {
   flex: 1;
-  overflow-y: auto; /* Desplazamiento vertical si es necesario */
 }
 
 /* Footer */
