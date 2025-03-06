@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/static/Manrope-Regular.ttf') format('truetype');
+    font-weight: 400;
+    /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/static/Manrope-Medium.ttf') format('truetype');
+    font-weight: 500;
+    /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/static/Manrope-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/static/Manrope-Bold.ttf') format('truetype');
+    font-weight: 700;
+    /* SemiBold */
+    font-style: normal;
+}
+
+.comunidad-section {
+    padding: 40px 80px;
+}
+
+.grid-container {
+    font-family: 'Manrope', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.grid-item h2{
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.grid-item p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.ul-title{
+    font-weight: 600;
+    font-size: 16px;
+    background: linear-gradient(90deg, #FBD207 0%, #51FF00 32%, #04E9B3 67%, #C156FF 100%);
+    -webkit-background-clip: text; /* Asegura que el gradiente se aplique solo al texto */
+    color: transparent; /* Hace que el texto sea transparente para mostrar el gradiente */
+}
+
+/* Listado de punteo */
+.stats-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 12px;
+    display: block;
+}
+
+.stats-list li {
+    font-size: 13px;
+    font-weight: 400;
+    display: list-item;
+    align-items: center;
+    letter-spacing: .5px;
+    margin-bottom: 8px;
+}
+
+/* Métricas */
+.stats-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+}
+
+.metric {
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.buttons-comnidad-container{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.buttons-comnidad-container button{
+    min-width: 250px;
+}
+
+.button-comnidad-1{
+    background-color: #FBD207;
+    color: black;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-comnidad-1:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.button-comnidad-2{
+    background-color: #fbd20700;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-comnidad-2:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);;
+}

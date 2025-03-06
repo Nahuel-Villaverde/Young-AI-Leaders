@@ -24,17 +24,23 @@
 
 
 .header {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 70px; /* Ajusta el padding lateral */
-    background-color: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(4px);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-  }
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 70px;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* Clase que se agregará al hacer scroll */
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.4); /* Se aclara */
+}
   
 /* Estilo para el logo */
 .logo-container {
@@ -46,6 +52,7 @@
   .logo-container img {
     height: 60px;
     width: 100%;
+    cursor: pointer;
   }
   
   .nav-links {
@@ -71,7 +78,7 @@
   }
   
   .nav-item:hover {
-    color: #FF8C00;
-    text-shadow: 0px 0px 10px rgba(255, 140, 0, 0.35);
+    color: #FBD207;
+    text-shadow: 0px 0px 10px #FBD20759;
   }
   

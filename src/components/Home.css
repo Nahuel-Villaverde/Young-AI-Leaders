@@ -76,10 +76,19 @@
     margin-bottom: 24px;
 }
 
-.home-content button{
+.home-content button {
     background-color: #FBD207;
     color: #000000;
     font-weight: 700;
     font-size: 16px;
     border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-content button:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
