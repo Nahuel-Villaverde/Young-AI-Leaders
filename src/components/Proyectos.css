@@ -1,0 +1,50 @@
+
+.proyectos-section{
+    background-color: #FFFFFF;
+}
+
+.proyect-section-container{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    margin-left: 70px;
+    margin-right: 70px;
+    overflow: hidden;
+}
+
+.proyectos-titulo-section{
+    cursor: default;
+    margin: 0;
+    font-weight: 700;
+    font-size: 38px;
+    color: #000000;
+    padding-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.proyects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 8vw;
+}
+
+.proyect h3{
+    font-size: 28px;
+    color: #000000;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.proyect p{
+    font-size: 13px;
+    color: #000000;
+}
+
+.proyect{
+    max-width: 45vw;
+}
+.proyect img {
+    width: auto;
+    height: 350px; /* Igual que el div */
+    object-fit: cover;
+    border-radius: 10px;
+}
