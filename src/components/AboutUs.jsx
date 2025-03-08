@@ -9,7 +9,7 @@ function AboutUs() {
         <div className="textContainer">
           <h2 className="title">Nuestro Objetivo</h2>
           <p className="subtitle">
-            Fomentar la colaboración y la innovación en IA para el bien social.
+            Fomentar la colaboración y la innovación en IA para el bien social
           </p>
         </div>
         <div className="rightSpacer"></div> {/* Espaciador derecho */}

@@ -57,11 +57,12 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin-top: 25vh;
 }
 
 /* Divs vacíos para alinear el título sin margin */
 .leftSpacer {
-  flex: 1;
+  flex: 1.8;
 }
 
 .rightSpacer {
@@ -96,6 +97,7 @@
   flex-direction: row;
   width: 100%;
   justify-content: center;
+  margin-top: 4vh;
 }
 
 .leftContent {
