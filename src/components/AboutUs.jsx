@@ -1,4 +1,4 @@
-import './AboutUs.css';
+import "./AboutUs.css";
 
 function AboutUs() {
   return (
@@ -19,14 +19,15 @@ function AboutUs() {
         {/* Contenido del lado izquierdo */}
         <div className="leftContent">
           <p className="leftDescription">
-            Conectamos a jóvenes apasionados por la IA para generar impacto real.
+            Conectamos a jóvenes apasionados por la IA para generar impacto
+            real.
             <br />
-            <span className="highlightOne">
-              Aprende, colabora y transforma el 
-            </span>  
-            <span className="highlightTwo">
-              futuro con innovación.
-            </span>
+            <div className="highlightContent">
+              <span className="highlightOne">
+                Aprende, colabora y transforma el
+              </span>
+              <span className="highlightTwo">futuro con innovación.</span>
+            </div>
           </p>
           <button className="ctaButton">Conocer más</button>
         </div>
@@ -34,23 +35,42 @@ function AboutUs() {
         {/* Contenedor de las tarjetas */}
         <div className="cardsContainer">
           <div className="card">
-            <h3>🛠️ Innovación con Impacto Social</h3>
-            <p>
+            <div className="cardHeader">
+              <div className="iconContainer">
+                <img
+                  src="/light_icon.png"
+                  alt="Innovación Icon"
+                  className="cardIcon"
+                />
+              </div>
+              <h3>Innovación con Impacto Social</h3>
+            </div>
+            <p className="cardDescription">
               Desarrollo de proyectos en IA alineados con los ODS de la ONU.
               Exploramos soluciones tecnológicas que aborden desafíos globales,
-              asegurando que la inteligencia artificial tenga un impacto positivo
-              en la sociedad.
+              asegurando que la inteligencia artificial tenga un impacto
+              positivo en la sociedad.
             </p>
-            <span className="cardNumber">01</span>
+            <p className="cardNumber">01</p>
           </div>
+
           <div className="card">
-            <h3>🌍 Colaboración Global</h3>
-            <p>
+            <div className="cardHeader">
+              <div className="iconContainer">
+                <img
+                  src="/world_icon.png"
+                  alt="Colaboración Icon"
+                  className="cardIcon"
+                />
+              </div>
+              <h3>Colaboración Global</h3>
+            </div>
+            <p className="cardDescription">
               Una red internacional de jóvenes líderes en IA. Facilitamos la
               cooperación entre distintos centros y regiones para potenciar la
               diversidad de ideas y la sinergia entre proyectos.
             </p>
-            <span className="cardNumber">02</span>
+            <p className="cardNumber">02</p>
           </div>
         </div>
       </div>
