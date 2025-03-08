@@ -1,14 +1,5 @@
 @font-face {
-  font-family: "Manrope";
-  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf")
-    format("truetype");
-  font-weight: 500;
-  /* Regular */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
+  font-family: "Inter_Regular";
   src: url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf")
     format("truetype");
   font-weight: 500;
@@ -17,8 +8,17 @@
 }
 
 @font-face {
-  font-family: "Manrope";
-  src: url("../assets/fonts/Manrope/static/Manrope-SemiBold.ttf")
+  font-family: "Manrope_Regular";
+  src: url("../assets/fonts/Manrope/static/Manrope-Regular.ttf")
+    format("truetype");
+  font-weight: 500;
+  /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope_Medium";
+  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf")
     format("truetype");
   font-weight: 600;
   /* Medium */
@@ -26,16 +26,16 @@
 }
 
 @font-face {
-  font-family: "Manrope";
-  src: url("../assets/fonts/Manrope/static/Manrope-Bold.ttf") format("truetype");
+  font-family: "Manrope_SemiBold";
+  src: url("../assets/fonts/Manrope/static/Manrope-SemiBold.ttf") format("truetype");
   font-weight: 700;
   /* SemiBold */
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Manrope";
-  src: url("../assets/fonts/Manrope/static/Manrope-SemiBold.ttf")
+  font-family: "Manrope_Bold";
+  src: url("../assets/fonts/Manrope/static/Manrope-Bold.ttf")
     format("truetype");
   font-weight: 800;
   /* Bold */
@@ -101,12 +101,11 @@
 }
 
 .leftContent {
-  font-family: "Manrope";
+  font-family: "Manrope_Regular";
   font-size: 16px;
-  font-weight: 500;
   width: 400px;
   height: 339px;
-  margin: 0vh 2vw;
+  margin: 0vh 1.8vw;
 }
 
 .leftDescription {
@@ -115,6 +114,7 @@
 }
 
 .highlightContent {
+  font-family: "Manrope_SemiBold";
   margin-top: 1vh;
 }
 
@@ -176,7 +176,7 @@
 }
 
 .card h3 {
-  font-family: "Manrope";
+  font-family: "Manrope_Medium";
   font-size: 20px;
   font-weight: 200;
   color: #ffffff;
@@ -213,6 +213,7 @@
 }
 
 .cardDescription {
+  font-family: "Manrope_Regular";
   padding: 3vh 2vw 0vh;
   color: #dadada;
 }
@@ -233,4 +234,46 @@
   background: linear-gradient(90deg, #ffffff 0%, #999999 100%);
   -webkit-background-clip: text;
   color: transparent; /* Se ilumina con el degradado */
+}
+
+.bottomSection {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 4vh;
+  gap: 6vw;
+}
+
+.leftContent_two {
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 500;
+  width: 400px;
+  height: 339px;
+  margin: 0;
+}
+
+.cardsContainerTwo {
+  display: flex;
+  gap: 50px;
+  margin-top: 4vh;
+  margin-left: 2.4vw;
+}
+
+.highlightTitle {
+  font-family: "Manrope_Bold";
+  font-size: 32px;
+  background: linear-gradient(
+    90deg,
+    #fbd207 0%,
+    #51ff00 32%,
+    #04e9b3 67%,
+    #c156ff 100%
+  );
+  -webkit-background-clip: text; /* Asegura que el gradiente se aplique solo al texto */
+  color: transparent; /* Hace que el texto sea transparente para mostrar el gradiente */
+  letter-spacing: 0.6px;
 }

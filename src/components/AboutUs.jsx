@@ -74,6 +74,64 @@ function AboutUs() {
           </div>
         </div>
       </div>
+
+      <div className="bottomSection">
+        {/* Contenedor de las tarjetas */}
+        <div className="cardsContainerTwo">
+          <div className="card">
+            <div className="cardHeader">
+              <div className="iconContainer">
+                <img
+                  src="/books_icon.png"
+                  alt="Innovación Icon"
+                  className="cardIcon"
+                />
+              </div>
+              <h3>Formación y Crecimiento</h3>
+            </div>
+            <p className="cardDescription">
+              Acceso a recursos, mentorías y oportunidades educativas. Brindamos
+              herramientas, guías y capacitaciones para que los miembros puedan
+              desarrollar sus habilidades técnicas y de liderazgo en
+              inteligencia artificial.
+            </p>
+            <p className="cardNumber">03</p>
+          </div>
+
+          <div className="card">
+            <div className="cardHeader">
+              <div className="iconContainer">
+                <img
+                  src="/shake_hands_icon.png"
+                  alt="Colaboración Icon"
+                  className="cardIcon"
+                />
+              </div>
+              <h3>Autonomía con Apoyo</h3>
+            </div>
+            <p className="cardDescription">
+              Autogestión con apoyo estratégico de la UIT. Cada centro y líder
+              tiene independencia en la ejecución de sus proyectos, con el
+              respaldo de la UIT como entidad orientadora sin intervenir
+              directamente en la gestión.
+            </p>
+            <p className="cardNumber">04</p>
+          </div>
+        </div>
+
+        {/* Contenido del lado izquierdo */}
+        <div className="leftContent_two">
+          <p className="leftDescription">
+            <span className="highlightTitle">Rol de la UIT</span>
+            <br />
+            <div className="highlightContent">
+              Proporcionar apoyo y asesoramiento sin intervenir en la gestión de
+              los proyectos.
+            </div>
+          </p>
+          <button className="ctaButton">Conocer más</button>
+        </div>
+      </div>
     </section>
   );
 }
