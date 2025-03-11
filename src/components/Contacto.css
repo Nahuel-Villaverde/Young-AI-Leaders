@@ -1,0 +1,105 @@
+.contact-section {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .contact-subtitle {
+    font-size: 18px;
+    color: gray;
+  }
+  
+  .contact-span {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .contact-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .gmail-icon {
+    color: #d14836;
+  }
+  
+  .linkedin-icon {
+    color: #0077b5;
+  }
+  
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .submit-button {
+    background-color: #0077b5;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover {
+    background-color: #005f8b;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
