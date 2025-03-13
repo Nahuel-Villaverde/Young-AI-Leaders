@@ -208,7 +208,7 @@
 
 .cardNumber {
   position: absolute;
-  bottom: -68.9vh;
+  bottom: -50.5vh;
   right: 0.2vw;
   /* Ajusta la distancia desde la derecha */
   font-family: "Inter_Regular";
@@ -226,7 +226,7 @@
 }
 
 .cardNumber2 {
-  bottom: -74.9vh;
+  bottom: -55.2vh;
 }
 
 .highlightTitle {
