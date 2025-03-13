@@ -57,7 +57,7 @@
 
 .proyects-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     padding: 0 70px;
     /* Mantiene 70px de separación con los bordes */
