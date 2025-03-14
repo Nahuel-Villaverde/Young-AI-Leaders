@@ -45,6 +45,7 @@
   flex-direction: column;
   align-items: center;
   gap: 3vh;
+  margin-top: 15vh;
 }
 
 .container {

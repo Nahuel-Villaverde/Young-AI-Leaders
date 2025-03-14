@@ -35,6 +35,7 @@
 
 .comunidad-section {
   margin: 160px 160px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,14 +183,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 280px; /* Tamaño máximo de la card */
+  max-width: 280px;
   text-align: center;
+  overflow: hidden; /* Para que la imagen no sobresalga */
 }
 
 .card img {
   width: 100%;
   height: auto;
-
   max-width: 280px; /* Para que todas las imágenes sean iguales */
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;

@@ -1,21 +1,85 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
+import { FaLinkedin } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/free-mode";
 import "./SliderComunidad.css";
 
 const miembros = [
-  { id: 1, nombre: "Victoria Franco", img: "/Victoria.png" },
-  { id: 2, nombre: "Milagros Singer", img: "/Milagros.png" },
-  { id: 3, nombre: "Mathias Ramos Cuñarro", img: "/Mathias.png" },
-  { id: 4, nombre: "Julián Asinsten", img: "/Julian.png" },
-  { id: 5, nombre: "Otro Miembro", img: "/Otro.png" },
-  { id: 6, nombre: "Miembro Extra", img: "/Extra.png" },
-  { id: 7, nombre: "Miembro Extra", img: "/Extra.png" },
-  { id: 8, nombre: "Miembro Extra", img: "/Extra.png" },
-  { id: 9, nombre: "Miembro Extra", img: "/Extra.png" },
-  { id: 10, nombre: "Miembro Extra", img: "/Extra.png" },
-  { id: 11, nombre: "Miembro Extra", img: "/Extra.png" },
+  {
+    id: 1,
+    nombre: "Victoria Franco",
+    img: "/Victoria-Franco.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  {
+    id: 2,
+    nombre: "Milagros Singer",
+    img: "/Milagros-Singer.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  {
+    id: 3,
+    nombre: "Mathias Ramos Cuñarro",
+    img: "/Mathias-Ramos-Cuñarro.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  {
+    id: 4,
+    nombre: "Julián Asinsten",
+    img: "/Julián-Asinsten.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  {
+    id: 5,
+    nombre: "Lucía Scorzelli",
+    img: "/Lucía-Scorzelli.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  {
+    id: 6,
+    nombre: "Agustín Fernandes",
+    img: "/Agustín-Fernandes.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  // Duplicar los miembros para mejorar el efecto de loop
+  {
+    id: 7,
+    nombre: "Victoria Franco",
+    img: "/Victoria-Franco.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  {
+    id: 8,
+    nombre: "Milagros Singer",
+    img: "/Milagros-Singer.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  {
+    id: 9,
+    nombre: "Mathias Ramos Cuñarro",
+    img: "/Mathias-Ramos-Cuñarro.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  {
+    id: 10,
+    nombre: "Julián Asinsten",
+    img: "/Julián-Asinsten.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  {
+    id: 11,
+    nombre: "Lucía Scorzelli",
+    img: "/Lucía-Scorzelli.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
+  {
+    id: 12,
+    nombre: "Agustín Fernandes",
+    img: "/Agustín-Fernandes.webp",
+    linkedin: "https://www.linkedin.com/in/victoria-franco",
+  },
 ];
 
 function SliderComunidad() {
@@ -23,25 +87,36 @@ function SliderComunidad() {
     <section className="slidercomunidad-section">
       <h2 className="otrosMiembrosTitle">Otros miembros</h2>
       <Swiper
-        modules={[Autoplay]}
-        spaceBetween={30} // Más espacio entre tarjetas
-        slidesPerView={"auto"} // Ajuste dinámico de tarjetas
-        loop={true} // Scroll infinito
+        modules={[Autoplay, FreeMode]}
+        spaceBetween={100}
+        slidesPerView="auto"
+        loop={true}
+        freeMode={true}
         autoplay={{
-          delay: 0, // Sin pausa
-          disableOnInteraction: false, // No se detiene si el usuario interactúa
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
-        speed={5000} // Desplazamiento más fluido
-        allowTouchMove={false} // Bloquea el arrastre manual
-        centeredSlides={true} // Centra los elementos
+        speed={5000}
+        freeModeMomentum={false}
+        allowTouchMove={true}
+        draggable={true}
         className="otrosMiembrosSlider"
       >
-        {miembros.map((miembro) => (
-          <SwiperSlide key={miembro.id} className="miembroSlide">
-            <div className="card">
+        {miembros.map((miembro, index) => (
+          <SwiperSlide key={index} className="miembroSlide">
+            <div className="cardSlider">
               <img src={miembro.img} alt={miembro.nombre} />
-              <div className="card-content">
+              <div className="cardSlider-content">
                 <h3>{miembro.nombre}</h3>
+                <div className="linkedinContainer">
+                  <button
+                    className="linkedin-button"
+                    onClick={() => window.open(miembro.linkedin, "_blank")}
+                  >
+                    <FaLinkedin className="linkedin-icon" />
+                  </button>
+                </div>
               </div>
             </div>
           </SwiperSlide>

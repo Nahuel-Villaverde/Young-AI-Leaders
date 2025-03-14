@@ -38,7 +38,7 @@
     font-weight: 700;
     font-size: 38px;
     color: #000000;
-    padding-top: 3vh;
+    padding-top: 0;
     margin-bottom: 3vh;
 }
 
@@ -99,4 +99,12 @@
     background-color: black;
     color: white;
     border: none;
+}
+
+.proximamente{
+    color: black;
+    font-size: 64px;
+    text-align: center;
+    font-family: 'Manrope';
+    margin-top: 20px;
 }

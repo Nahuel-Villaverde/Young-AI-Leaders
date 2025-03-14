@@ -23,7 +23,7 @@ function Header() {
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <Link to="home" smooth={true} duration={500} offset={-200} className="logo-container">
-        <img src="/Logo-YoungAi.png" alt="Logo Young Ai" />
+        <img src="/Buenos-Aires-Hub-Logo.webp" alt="Logo Young Ai" />
       </Link>
       <nav>
         <ul className="nav-links">

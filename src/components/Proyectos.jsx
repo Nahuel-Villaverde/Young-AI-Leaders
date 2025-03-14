@@ -6,7 +6,9 @@ function Proyectos() {
       <img src="/Afondo.png" alt="Decoración" className="fondo-imagen" />
       <div className='proyect-section-container'>
         <h2 className='proyectos-titulo-section'>Proyectos destacados</h2>
-        <div className='proyects-container'>
+
+        <h3 className='proximamente'>Próximamente</h3>
+{/*         <div className='proyects-container'>
           <div className='proyect'>
             <img src="/proyect1.png" alt="proyecto 1" />
             <h3>AI Learning Hub</h3>
@@ -20,7 +22,7 @@ function Proyectos() {
           </div>
         </div>
 
-        <button className='button-proyect'>Ver más</button>
+        <button className='button-proyect'>Ver más</button> */}
       </div>
     </section>
   );

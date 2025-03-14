@@ -66,33 +66,34 @@ function Comunidad() {
       </div>
 
       <div className="cards-container">
-        <div className="card">
-          <img src="/Sebastian.png" alt="Imagen 1" />
-          <div className="card-content">
-            <h3>Sebastián D’agrosa Okita</h3>
-            <h4>Líder del Centro</h4>
-            <p>Coordina operaciones y fomenta la colaboración.</p>
-          </div>
-        </div>
-
-        <div className="card">
-          <img src="/Facundo.png" alt="Imagen 2" />
-          <div className="card-content">
-            <h3>Facundo Benítez Piloni</h3>
-            <h4>Líder Regional</h4>
-            <p>Facilita cooperación entre centros y proyectos.</p>
-          </div>
-        </div>
-
-        <div className="card">
-          <img src="/Ignacio.png" alt="Imagen 3" />
-          <div className="card-content">
-            <h3>Ignacio Panza</h3>
-            <h4>Líder de Impacto</h4>
-            <p>Mide y reporta el impacto en relación con los ODS.</p>
-          </div>
+      <div className="card">
+        <img src="/Seba.webp" alt="Imagen 1" />
+        <div className="card-content">
+          <h3>Sebastián D’agrosa Okita</h3>
+          <h4>Líder del Centro</h4>
+          <p>Coordina operaciones y fomenta la colaboración.</p>
         </div>
       </div>
+
+      <div className="card">
+        <img src="/Facundo.webp" alt="Imagen 2" />
+        <div className="card-content">
+          <h3>Facundo Benítez Piloni</h3>
+          <h4>Líder Regional</h4>
+          <p>Facilita cooperación entre centros y proyectos.</p>
+        </div>
+      </div>
+
+      <div className="card">
+        <img src="/Ignacio.webp" alt="Imagen 3" />
+        <div className="card-content">
+          <h3>Ignacio Panza</h3>
+          <h4>Líder de Impacto</h4>
+          <p>Mide y reporta el impacto en relación con los ODS.</p>
+        </div>
+      </div>
+    </div>
+
     </section>
   );
 }
