@@ -53,7 +53,7 @@ function Comunidad() {
 
       <div className="cards-container">
       <div className="card">
-        <img src="/Sebastian.png" alt="Imagen 1" />
+        <img src="/Seba.webp" alt="Imagen 1" />
         <div className="card-content">
           <h3>Sebastián D’agrosa Okita</h3>
           <h4>Líder del Centro</h4>
@@ -62,7 +62,7 @@ function Comunidad() {
       </div>
 
       <div className="card">
-        <img src="/Facundo.png" alt="Imagen 2" />
+        <img src="/Facundo.webp" alt="Imagen 2" />
         <div className="card-content">
           <h3>Facundo Benítez Piloni</h3>
           <h4>Líder Regional</h4>
@@ -71,7 +71,7 @@ function Comunidad() {
       </div>
 
       <div className="card">
-        <img src="/Ignacio.png" alt="Imagen 3" />
+        <img src="/Ignacio.webp" alt="Imagen 3" />
         <div className="card-content">
           <h3>Ignacio Panza</h3>
           <h4>Líder de Impacto</h4>

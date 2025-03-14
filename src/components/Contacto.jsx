@@ -30,10 +30,10 @@ function Contacto() {
           <span className="contact-span">Más de 100 jóvenes líderes en IA colaborando en <br /> <span className="multicolor">proyectos globales.</span></span>
           <div className="contact-icons">
             <a href="mailto:contacto@ejemplo.com" className="icon gmail-icon">
-              <img src="/gmail.png" alt="Gmail" />
+              <img src="/gmail.webp" alt="Gmail" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="icon linkedin-icon">
-              <img src="/linkedin.png" alt="LinkedIn" />
+              <img src="/linkedin.webp" alt="LinkedIn" />
             </a>
           </div>
         </div>
