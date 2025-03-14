@@ -42,9 +42,7 @@ function AboutUs() {
             asegurando que la inteligencia artificial tenga un impacto positivo
             en la sociedad.
           </p>
-          <div className="cardNumberContainer">
             <p className="cardNumber">01</p>
-          </div>
         </div>
         <div class="item">
           <div className="cardHeader">
@@ -62,9 +60,7 @@ function AboutUs() {
             cooperación entre distintos centros y regiones para potenciar la
             diversidad de ideas y la sinergia entre proyectos.
           </p>
-          <div className="cardNumberContainer">
             <p className="cardNumber cardNumber2">02</p>
-          </div>
         </div>
         <div class="item">
           <div className="cardHeader">
@@ -83,9 +79,7 @@ function AboutUs() {
             desarrollar sus habilidades técnicas y de liderazgo en inteligencia
             artificial.
           </p>
-          <div className="cardNumberContainer">
             <p className="cardNumber">03</p>
-          </div>
         </div>
         <div class="item">
           <div className="cardHeader">
@@ -104,9 +98,7 @@ function AboutUs() {
             respaldo de la UIT como entidad orientadora sin intervenir
             directamente en la gestión.
           </p>
-          <div className="cardNumberContainer">
             <p className="cardNumber">04</p>
-          </div>
         </div>
         <div class="item-3">
           <p className="leftDescription">

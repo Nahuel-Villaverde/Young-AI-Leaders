@@ -69,8 +69,10 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   padding-left: 2.5vw;
+  transition: transform 0.2s ease-in-out;
+
 }
 
 .item:hover {
@@ -158,6 +160,7 @@
 .ctaButton:hover {
   background-color: white;
   color: #000106;
+  border: 2px solid white;
 }
 
 .cardHeader {
@@ -197,25 +200,19 @@
   padding-right: 1vw;
 }
 
-.cardNumberContainer {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  /* Asegura que el número se posicione dentro del .item */
-}
 
 .cardNumber {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-self: end;
   position: absolute;
-  bottom: -50.5vh;
-  right: 0.2vw;
-  /* Ajusta la distancia desde la derecha */
+  bottom: -50px;
   font-family: "Inter_Regular";
   font-size: 128px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.1);
   transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  right: 5px;
 }
 
 /* Aplica el degradado cuando el usuario pase por la tarjeta */
@@ -225,9 +222,6 @@
   color: transparent;
 }
 
-.cardNumber2 {
-  bottom: -55.2vh;
-}
 
 .highlightTitle {
   font-family: "Manrope_Bold";
