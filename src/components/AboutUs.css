@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Inter_Regular";
-  src: url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
   font-weight: 500;
   /* Regular */
   font-style: normal;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: "Manrope_Regular";
-  src: url("../assets/fonts/Manrope/static/Manrope-Regular.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-Regular.ttf") format("truetype");
   font-weight: 500;
   /* Regular */
   font-style: normal;
@@ -18,8 +16,7 @@
 
 @font-face {
   font-family: "Manrope_Medium";
-  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf") format("truetype");
   font-weight: 600;
   /* Medium */
   font-style: normal;
@@ -35,8 +32,7 @@
 
 @font-face {
   font-family: "Manrope_Bold";
-  src: url("../assets/fonts/Manrope/static/Manrope-Bold.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-Bold.ttf") format("truetype");
   font-weight: 800;
   /* Bold */
   font-style: normal;
@@ -53,19 +49,197 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* La segunda columna ocupa el doble de espacio */
-  grid-template-rows: repeat(3, 1fr); /* 3 filas de igual tamaño */
-  gap: 10px; /* Espacio entre los elementos */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* La segunda columna ocupa el doble de espacio */
+  grid-template-rows: repeat(3, 1fr);
+  /* 3 filas de igual tamaño */
+  gap: 40px;
+  /* Espacio entre los elementos */
+  width: 90%;
+  margin-top: -20vh;
 }
 
 .item {
-  background-color: #26272B;
-  padding: 100px;
+  background-color: #26272b;
   text-align: center;
+  border-radius: 10px;
+  max-width: 400px;
+  height: 339px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: visible;
+  padding-left: 2.5vw;
+}
+
+.item:hover {
+  transform: translateY(-5px);
 }
 
 /* Este item ocupará el espacio de dos columnas */
 .item-2 {
-  grid-column: span 2; /* Ocupa dos columnas */
+  grid-column: span 2;
+  /* Ocupa dos columnas */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 1vw;
 }
 
+.item-3 {
+  padding-left: 2vw;
+}
+
+.title {
+  font-family: "Manrope";
+  font-size: 64px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: "Manrope";
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.leftDescription {
+  max-width: 22vw;
+  margin: 6vh 0vw 0vh 0vh;
+  font-family: "Manrope_Regular";
+  font-size: 16px;
+}
+
+.highlightContent {
+  font-family: "Manrope_SemiBold";
+  margin-top: 1vh;
+  font-size: 16px;
+}
+
+.highlightOne,
+.highlightTwo {
+  font-weight: 700;
+  background: linear-gradient(90deg,
+      #fbd207 0%,
+      #51ff00 32%,
+      #04e9b3 67%,
+      #c156ff 100%);
+  -webkit-background-clip: text;
+  /* Asegura que el gradiente se aplique solo al texto */
+  color: transparent;
+  /* Hace que el texto sea transparente para mostrar el gradiente */
+  letter-spacing: 0.6px;
+}
+
+.highlightTwo {
+  display: block;
+}
+
+.ctaButton {
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  height: 42px;
+  width: 162px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.5vh;
+}
+
+.ctaButton:hover {
+  background-color: white;
+  color: #000106;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 2vh;
+}
+
+.cardHeader h3 {
+  font-family: "Manrope_Medium";
+  font-size: 20px;
+}
+
+.iconContainer {
+  background-color: rgba(0, 0, 0, 0.26);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.cardIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.cardDescription {
+  font-family: "Manrope_Regular";
+  font-size: 16px;
+  width: 314px;
+  text-align: left;
+  color: #dadada;
+  padding-right: 1vw;
+}
+
+.cardNumberContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  /* Asegura que el número se posicione dentro del .item */
+}
+
+.cardNumber {
+  position: absolute;
+  bottom: -50.5vh;
+  right: 0.2vw;
+  /* Ajusta la distancia desde la derecha */
+  font-family: "Inter_Regular";
+  font-size: 128px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.1);
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Aplica el degradado cuando el usuario pase por la tarjeta */
+.item:hover .cardNumber {
+  background: linear-gradient(90deg, #ffffff 0%, #999999 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.cardNumber2 {
+  bottom: -55.2vh;
+}
+
+.highlightTitle {
+  font-family: "Manrope_Bold";
+  font-size: 32px;
+  background: linear-gradient(
+    90deg,
+    #fbd207 0%,
+    #51ff00 32%,
+    #04e9b3 67%,
+    #c156ff 100%
+  );
+  -webkit-background-clip: text; /* Asegura que el gradiente se aplique solo al texto */
+  color: transparent; /* Hace que el texto sea transparente para mostrar el gradiente */
+  letter-spacing: 0.6px;
+}
