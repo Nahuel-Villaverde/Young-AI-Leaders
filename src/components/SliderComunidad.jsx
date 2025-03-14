@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
-import { FaLinkedin } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/free-mode";
@@ -109,14 +108,14 @@ function SliderComunidad() {
               <img src={miembro.img} alt={miembro.nombre} />
               <div className="cardSlider-content">
                 <h3>{miembro.nombre}</h3>
-                <div className="linkedinContainer">
-                  <button
-                    className="linkedin-button"
-                    onClick={() => window.open(miembro.linkedin, "_blank")}
-                  >
-                    <FaLinkedin className="linkedin-icon" />
-                  </button>
-                </div>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="icon linkedin-icon"
+                >
+                  <img src="/linkedin.webp" alt="LinkedIn" />
+                </a>
               </div>
             </div>
           </SwiperSlide>

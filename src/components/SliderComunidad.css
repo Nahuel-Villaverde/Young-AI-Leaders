@@ -79,37 +79,12 @@
   margin: 0 0 10px 0;
 }
 
-.linkedinContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #1e1e1e; /* Fondo oscuro inicial */
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  margin-top: 10px;
+.icon img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s ease-in-out;
 }
 
-.linkedin-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-}
-
-.linkedin-icon {
-  color: white; /* Icono de LinkedIn en color blanco */
-  font-size: 24px;
-  transition: color 0.3s ease-in-out;
-}
-
-.linkedin-button:hover {
-  background-color: white; /* Fondo blanco en hover */
-  transform: scale(1.1); /* Efecto de agrandamiento */
-}
-
-.linkedin-button:hover .linkedin-icon {
-  color: black; /* Icono negro cuando el botón está en hover */
+.icon img:hover {
+  transform: scale(1.1);
 }
