@@ -3,7 +3,7 @@ import './Home.css';
 function Home() {
   return (
     <section className="section home-container" id="home">
-      <img src="/fondo-delante.png" alt="Imagen Delante" className="image-overlay" />
+      <div className="image-overlay"></div>
 
       <div className='home-content'>
         <h1 className='home-title'>Young AI Leaders</h1>
