@@ -10,74 +10,88 @@ const miembros = [
     id: 1,
     nombre: "Victoria Franco",
     img: "/Victoria-Franco.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    linkedin: "https://www.linkedin.com/in/victoriafranco24/",
   },
   {
     id: 2,
     nombre: "Milagros Singer",
     img: "/Milagros-Singer.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    linkedin: "https://www.linkedin.com/in/milagros-singer-gonzalez/",
   },
   {
     id: 3,
     nombre: "Mathias Ramos Cuñarro",
     img: "/Mathias-Ramos-Cuñarro.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    linkedin: "https://www.linkedin.com/in/mathiasramosc/",
   },
   {
     id: 4,
     nombre: "Julián Asinsten",
     img: "/Julián-Asinsten.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    linkedin: "https://www.linkedin.com/in/juli%C3%A1n-asinsten-247636261/",
   },
   {
     id: 5,
     nombre: "Lucía Scorzelli",
     img: "/Lucía-Scorzelli.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    linkedin:
+      "https://www.linkedin.com/in/lucia-scorzelli-vald%C3%A9s-09398a233/",
   },
   {
     id: 6,
     nombre: "Agustín Fernandes",
     img: "/Agustín-Fernandes.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    linkedin: "https://www.linkedin.com/in/agustinjoelfernandescabal/",
+  },
+  {
+    id: 7,
+    nombre: "Candela Sosa Medina",
+    img: "/Candela-Sosa-Medina.webp",
+    linkedin: "https://www.linkedin.com/in/candela-sosa-medina-618224354/",
   },
   // Duplicar los miembros para mejorar el efecto de loop
   {
-    id: 7,
+    id: 8,
     nombre: "Victoria Franco",
     img: "/Victoria-Franco.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
-  },
-  {
-    id: 8,
-    nombre: "Milagros Singer",
-    img: "/Milagros-Singer.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    linkedin: "https://www.linkedin.com/in/victoriafranco24/",
   },
   {
     id: 9,
-    nombre: "Mathias Ramos Cuñarro",
-    img: "/Mathias-Ramos-Cuñarro.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    nombre: "Milagros Singer",
+    img: "/Milagros-Singer.webp",
+    linkedin: "https://www.linkedin.com/in/milagros-singer-gonzalez/",
   },
   {
     id: 10,
-    nombre: "Julián Asinsten",
-    img: "/Julián-Asinsten.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    nombre: "Mathias Ramos Cuñarro",
+    img: "/Mathias-Ramos-Cuñarro.webp",
+    linkedin: "https://www.linkedin.com/in/mathiasramosc/",
   },
   {
     id: 11,
-    nombre: "Lucía Scorzelli",
-    img: "/Lucía-Scorzelli.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    nombre: "Julián Asinsten",
+    img: "/Julián-Asinsten.webp",
+    linkedin: "https://www.linkedin.com/in/juli%C3%A1n-asinsten-247636261/",
   },
   {
     id: 12,
+    nombre: "Lucía Scorzelli",
+    img: "/Lucía-Scorzelli.webp",
+    linkedin:
+      "https://www.linkedin.com/in/lucia-scorzelli-vald%C3%A9s-09398a233/",
+  },
+  {
+    id: 13,
     nombre: "Agustín Fernandes",
     img: "/Agustín-Fernandes.webp",
-    linkedin: "https://www.linkedin.com/in/victoria-franco",
+    linkedin: "https://www.linkedin.com/in/agustinjoelfernandescabal/",
+  },
+  {
+    id: 14,
+    nombre: "Candela Sosa Medina",
+    img: "/Candela-Sosa-Medina.webp",
+    linkedin: "https://www.linkedin.com/in/candela-sosa-medina-618224354/",
   },
 ];
 
@@ -109,7 +123,7 @@ function SliderComunidad() {
               <div className="cardSlider-content">
                 <h3>{miembro.nombre}</h3>
                 <a
-                  href="https://linkedin.com"
+                  href={miembro.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="icon linkedin-icon"

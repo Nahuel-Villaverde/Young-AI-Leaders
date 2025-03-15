@@ -192,8 +192,6 @@
   width: 100%;
   height: auto;
   max-width: 280px; /* Para que todas las imágenes sean iguales */
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
 
 .card-content {
