@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Manrope_Regular";
+  src: url("../assets/fonts/Manrope/static/Manrope-Regular.ttf")
+    format("truetype");
+  font-weight: 500;
+  /* Regular */
+  font-style: normal;
+}
+
+.footer {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 422px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fondo-imagen {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  max-width: 450px;
+  height: auto;
+  transform: translateY(-50%);
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.container_display_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.area_1,
+.area_2,
+.area_3,
+.area_4,
+.area_5 {
+  padding: 0vh 4.5vw;
+}
+
+.area_1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #ffddc1;
+}
+
+.area_2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: #ffabab;
+}
+
+.area_3 {
+  grid-area: 2 / 1 / 3 / 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.area_4 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.area_5 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: #d4a5a5;
+}
+
+.linea-div3 {
+  width: 100%;
+  height: 2px;
+  background-color: #7f7f7f;
+  margin: 10px 0; /* Ajusta el espaciado */
+}
+
+.derechos {
+  font-family: "Manrope_Regular";
+  font-size: 16px;
+  color: #000000;
+}
+
+.termino_y_condiciones {
+  font-family: "Manrope_Regular";
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none; /* Quita el subrayado predeterminado */
+}
