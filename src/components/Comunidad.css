@@ -220,3 +220,14 @@
   color: #979797;
   margin-top: 0;
 }
+
+.leader-linkedin img{
+    width: 26px;
+    height: 26px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+
+.leader-linkedin img:hover {
+  transform: scale(1.1);
+}

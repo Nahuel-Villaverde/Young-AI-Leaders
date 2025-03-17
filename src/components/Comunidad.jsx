@@ -76,7 +76,7 @@ function Comunidad() {
               href="https://www.linkedin.com/in/sebastian-d-agrosa-okita-649002142/"
               target="_blank"
               rel="noopener noreferrer"
-              className="icon linkedin-icon"
+              className="linkedin-icon leader-linkedin"
             >
               <img src="/linkedin.webp" alt="LinkedIn" />
             </a>
@@ -93,7 +93,7 @@ function Comunidad() {
               href="https://www.linkedin.com/in/facundo-benitez-piloni/"
               target="_blank"
               rel="noopener noreferrer"
-              className="icon linkedin-icon"
+              className="linkedin-icon leader-linkedin"
             >
               <img src="/linkedin.webp" alt="LinkedIn" />
             </a>
@@ -110,7 +110,7 @@ function Comunidad() {
               href="https://www.linkedin.com/in/ignacio-panza/"
               target="_blank"
               rel="noopener noreferrer"
-              className="icon linkedin-icon"
+              className="linkedin-icon leader-linkedin"
             >
               <img src="/linkedin.webp" alt="LinkedIn" />
             </a>

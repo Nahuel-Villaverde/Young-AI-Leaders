@@ -68,14 +68,21 @@
     color: #FFFFFF;
 }
 
+
+.home-subtitle{
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
+
 .home-content h2{
     font-weight: 500;
     margin: 0 0 8px 0;
-    font-size: 38px;
+    font-size: 32px;
     color: #FFFFFF;
 }
 
-.home-content span {
+.home-span {
     font-size: 16px;
     color: #dadada;
     font-weight: 700;
@@ -88,7 +95,7 @@
     font-weight: 700;
     font-size: 16px;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;

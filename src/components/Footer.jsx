@@ -8,7 +8,7 @@ function Footer() {
 
       <div className="container_display_grid">
         <div className="area_1">
-          <img src="/Logo-YoungAi-FullColor.webp" alt="logo" />
+          <img className="logo-color" src="/Logo-YoungAi-FullColor.webp" alt="logo" />
           <p className="logo_title">
             Una comunidad global impulsando la inteligencia artificial para el
             bien social
