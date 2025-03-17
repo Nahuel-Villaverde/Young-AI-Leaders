@@ -25,8 +25,7 @@
 .home-container {
     position: relative;
     height: 100vh;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     background-image: url('/fondo-home2.webp');
     background-size: cover;
@@ -104,4 +103,87 @@
 .home-content button:hover {
     background-color: #000000;
     color: #ffffff;
+}
+
+
+@media (max-width: 1024px) {
+
+.home-container {
+    height: 80vh;
+}
+
+.image-overlay {
+    height: 80vh;
+}
+
+.home-title {
+    font-size: 38px;
+}
+
+.home-subtitle{
+    font-size: 28px;
+}
+
+.home-content h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.home-span {
+    font-size: 14px;
+}
+
+}
+
+@media (max-width: 768px) {
+    .home-content{
+        padding: 0;
+        align-items: center;
+    }
+
+    .home-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .image-overlay {
+        background-image: url('/fondo-home-celu.webp');
+    }
+
+    .home-content{
+        padding: 0 24px 0 24px;
+        align-items: center;
+    }
+
+    .home-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .home-title {
+        font-size: 32px;
+    }
+
+    .home-subtitle {
+        font-size: 26px;
+    }
+
+    .home-content h2 {
+        font-size: 20px;
+    }
+
+    .home-span {
+        font-size: 12px;
+    }
+
+    .home-content button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }
