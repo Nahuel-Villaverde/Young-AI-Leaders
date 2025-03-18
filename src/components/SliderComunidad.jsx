@@ -104,16 +104,16 @@ function SliderComunidad() {
         spaceBetween={100}
         slidesPerView="auto"
         loop={true}
-        freeMode={true}
+        freeMode={false}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
-          pauseOnMouseEnter: true,
+          pauseOnMouseEnter: false,
         }}
         speed={5000}
         freeModeMomentum={false}
-        allowTouchMove={true}
-        draggable={true}
+        allowTouchMove={false}
+        draggable={false}
         className="otrosMiembrosSlider"
       >
         {miembros.map((miembro, index) => (
