@@ -242,6 +242,26 @@
   letter-spacing: 0.6px;
 }
 
+@media (max-width: 1024px){
+  .cardDescription{
+      font-size: 12px;
+      width: auto;
+  }
+
+  .item{
+    padding-right: 2.5vw;
+  }
+
+  .cardHeader{
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .cardHeader h3{
+    width: 165px;
+  }
+}
+
 @media (max-width: 425px) {
   .container {
     display: flex;
