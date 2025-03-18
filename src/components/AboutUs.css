@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Inter_Regular";
-  src: url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf")
+    format("truetype");
   font-weight: 500;
   /* Regular */
   font-style: normal;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: "Manrope_Regular";
-  src: url("../assets/fonts/Manrope/static/Manrope-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-Regular.ttf")
+    format("truetype");
   font-weight: 500;
   /* Regular */
   font-style: normal;
@@ -16,7 +18,8 @@
 
 @font-face {
   font-family: "Manrope_Medium";
-  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf") format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf")
+    format("truetype");
   font-weight: 600;
   /* Medium */
   font-style: normal;
@@ -24,7 +27,8 @@
 
 @font-face {
   font-family: "Manrope_SemiBold";
-  src: url("../assets/fonts/Manrope/static/Manrope-SemiBold.ttf") format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-SemiBold.ttf")
+    format("truetype");
   font-weight: 700;
   /* SemiBold */
   font-style: normal;
@@ -73,7 +77,6 @@
   overflow: hidden;
   padding-left: 2.5vw;
   transition: transform 0.2s ease-in-out;
-
 }
 
 .item:hover {
@@ -125,11 +128,13 @@
 .highlightOne,
 .highlightTwo {
   font-weight: 700;
-  background: linear-gradient(90deg,
-      #fbd207 0%,
-      #51ff00 32%,
-      #04e9b3 67%,
-      #c156ff 100%);
+  background: linear-gradient(
+    90deg,
+    #fbd207 0%,
+    #51ff00 32%,
+    #04e9b3 67%,
+    #c156ff 100%
+  );
   -webkit-background-clip: text;
   /* Asegura que el gradiente se aplique solo al texto */
   color: transparent;
@@ -201,7 +206,6 @@
   padding-right: 1vw;
 }
 
-
 .cardNumber {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -223,7 +227,6 @@
   color: transparent;
 }
 
-
 .highlightTitle {
   font-family: "Manrope_Bold";
   font-size: 32px;
@@ -237,4 +240,50 @@
   -webkit-background-clip: text; /* Asegura que el gradiente se aplique solo al texto */
   color: transparent; /* Hace que el texto sea transparente para mostrar el gradiente */
   letter-spacing: 0.6px;
+}
+
+@media (max-width: 425px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-2 {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 38px;
+    margin-top: 10vh;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .leftDescription {
+    max-width: 75vw;
+  }
+
+  .cardDescription {
+    padding-left: 4vw;
+    margin-top: 1vh;
+  }
+
+  .cardHeader {
+    padding-left: 4vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
 }
