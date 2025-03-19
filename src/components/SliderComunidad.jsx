@@ -49,7 +49,6 @@ const miembros = [
     img: "/Candela-Sosa-Medina.webp",
     linkedin: "https://www.linkedin.com/in/candela-sosa-medina-618224354/",
   },
-  // Duplicar los miembros para mejorar el efecto de loop
   {
     id: 8,
     nombre: "Victoria Franco",
@@ -128,7 +127,7 @@ function SliderComunidad() {
                   rel="noopener noreferrer"
                   className="icon linkedin-icon"
                 >
-                  <img src="/linkedin.webp" alt="LinkedIn" />
+                  <img src="/linkedin.webp" alt="Icono de LinkedIn - Conectar con nosotros en LinkedIn" />
                 </a>
               </div>
             </div>

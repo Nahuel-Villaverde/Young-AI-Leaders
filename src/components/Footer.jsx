@@ -4,11 +4,11 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <img src="/Afondo.png" alt="Decoración" className="fondo-imagen" />
+      <img src="/Afondo.png" alt="Imagen de fondo" className="fondo-imagen" />
 
       <div className="container_display_grid">
         <div className="area_1">
-          <img className="logo-color" src="/Logo-YoungAi-FullColor.webp" alt="logo" />
+          <img className="logo-color" src="/Logo-YoungAi-FullColor.webp" alt="Logo de Young Ai Leaders Buenos Aires Hub" />
           <p className="logo_title">
             Una comunidad global impulsando la inteligencia artificial para el
             bien social
@@ -21,13 +21,13 @@ function Footer() {
               rel="noopener noreferrer"
               className="icon_footer linkedin-icon"
             >
-              <img src="/linkedin.webp" alt="LinkedIn" />
+              <img src="/linkedin.webp" alt="Imagen con redirección a LinkedIn" />
             </a>
             <a
               href="mailto:contacto@ejemplo.com"
               className="icon_footer gmail-icon"
             >
-              <img src="/gmail.webp" alt="Gmail" />
+              <img src="/gmail.webp" alt="Imagen con redirección a Gmail" />
             </a>
           </div>
         </div>

@@ -30,7 +30,7 @@ function AboutUs() {
             <div className="iconContainer">
               <img
                 src="/light_icon.png"
-                alt="Innovación Icon"
+                alt="Icono de Innovación"
                 className="cardIcon"
               />
             </div>
@@ -49,7 +49,7 @@ function AboutUs() {
             <div className="iconContainer">
               <img
                 src="/world_icon.png"
-                alt="Innovación Icon"
+                alt="Icono de Colaboración Global"
                 className="cardIcon"
               />
             </div>
@@ -67,7 +67,7 @@ function AboutUs() {
             <div className="iconContainer">
               <img
                 src="/books_icon.png"
-                alt="Innovación Icon"
+                alt="Icono de Formación y Crecimiento"
                 className="cardIcon"
               />
             </div>
@@ -86,7 +86,7 @@ function AboutUs() {
             <div className="iconContainer">
               <img
                 src="/shake_hands_icon.png"
-                alt="Innovación Icon"
+                alt="Icono Autonomía con Apoyo"
                 className="cardIcon"
               />
             </div>

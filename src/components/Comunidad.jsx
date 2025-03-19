@@ -67,7 +67,7 @@ function Comunidad() {
 
       <div className="cards-container">
         <div className="card">
-          <img src="/Seba.webp" alt="Imagen 1" />
+          <img src="/Seba.webp" alt="Imagen de Lider del Centro" />
           <div className="card-content">
             <h3>Sebastián D’agrosa Okita</h3>
             <h4>Líder del Centro</h4>
@@ -78,13 +78,13 @@ function Comunidad() {
               rel="noopener noreferrer"
               className="linkedin-icon leader-linkedin"
             >
-              <img src="/linkedin.webp" alt="LinkedIn" />
+              <img src="/linkedin.webp" alt="Icono de LinkedIn" />
             </a>
           </div>
         </div>
 
         <div className="card">
-          <img src="/Facundo.webp" alt="Imagen 2" />
+          <img src="/Facundo.webp" alt="Imagen de Lider Regional" />
           <div className="card-content">
             <h3>Facundo Benítez Piloni</h3>
             <h4>Líder Regional</h4>
@@ -95,13 +95,13 @@ function Comunidad() {
               rel="noopener noreferrer"
               className="linkedin-icon leader-linkedin"
             >
-              <img src="/linkedin.webp" alt="LinkedIn" />
+              <img src="/linkedin.webp" alt="Icono de LinkedIn" />
             </a>
           </div>
         </div>
 
         <div className="card">
-          <img src="/Ignacio.webp" alt="Imagen 3" />
+          <img src="/Ignacio.webp" alt="Imagen de Lider de Impacto" />
           <div className="card-content">
             <h3>Ignacio Panza</h3>
             <h4>Líder de Impacto</h4>
@@ -112,7 +112,7 @@ function Comunidad() {
               rel="noopener noreferrer"
               className="linkedin-icon leader-linkedin"
             >
-              <img src="/linkedin.webp" alt="LinkedIn" />
+              <img src="/linkedin.webp" alt="Icono de LinkedIn" />
             </a>
           </div>
         </div>
