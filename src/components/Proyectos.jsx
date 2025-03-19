@@ -3,7 +3,7 @@ import './Proyectos.css';
 function Proyectos() {
   return (
     <section className="proyectos-section" id="proyectos">
-      <img src="/Afondo.png" alt="Decoración" className="fondo-imagen" />
+      <img src="/Afondo.png" alt="Decoración" className="fondo-imagen-proyectos" />
       <div className='proyect-section-container'>
         <h2 className='proyectos-titulo-section'>Proyectos destacados</h2>
 

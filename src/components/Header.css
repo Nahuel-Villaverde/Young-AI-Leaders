@@ -69,11 +69,11 @@
 @media (max-width: 790px) {
   .nav {
     position: fixed;
-    top: 70px;
+    top: 58px;
     right: 0;
     width: 25%;
     /* Ocupa solo el 60% del ancho */
-    height: 100vh;
+    height: 160vh;
     background-color: rgba(0, 0, 0, 0.8);
     /* Fondo semitransparente */
     backdrop-filter: blur(2px);
@@ -121,7 +121,7 @@
   .menu-icon {
     display: block;
     position: absolute;
-    top: 18px;
+    top: 15px;
     right: 70px;
     font-size: 30px;
     cursor: pointer;
@@ -145,7 +145,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 445px) {
   .menu-icon {
     top: 15px;
     right: 24px;
@@ -160,3 +160,4 @@
     width: 45%;
   }
 }
+

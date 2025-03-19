@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Manrope";
-  src: url("../assets/fonts/Manrope/static/Manrope-Regular.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-Regular.ttf") format("truetype");
   font-weight: 400;
   /* Regular */
   font-style: normal;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf") format("truetype");
   font-weight: 500;
   /* Regular */
   font-style: normal;
@@ -18,8 +16,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("../assets/fonts/Manrope/static/Manrope-SemiBold.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-SemiBold.ttf") format("truetype");
   font-weight: 600;
   /* Medium */
   font-style: normal;
@@ -75,15 +72,15 @@
 .ul-title {
   font-weight: 600;
   font-size: 16px;
-  background: linear-gradient(
-    90deg,
-    #fbd207 0%,
-    #51ff00 32%,
-    #04e9b3 67%,
-    #c156ff 100%
-  );
-  -webkit-background-clip: text; /* Asegura que el gradiente se aplique solo al texto */
-  color: transparent; /* Hace que el texto sea transparente para mostrar el gradiente */
+  background: linear-gradient(90deg,
+      #fbd207 0%,
+      #51ff00 32%,
+      #04e9b3 67%,
+      #c156ff 100%);
+  -webkit-background-clip: text;
+  /* Asegura que el gradiente se aplique solo al texto */
+  color: transparent;
+  /* Hace que el texto sea transparente para mostrar el gradiente */
 }
 
 /* Listado de punteo */
@@ -175,7 +172,8 @@
   display: flex;
   font-family: "Manrope", sans-serif;
   justify-content: space-between;
-  gap: 100px; /* Espacio entre las cards */
+  gap: 100px;
+  /* Espacio entre las cards */
   padding: 50px 0;
 }
 
@@ -185,13 +183,15 @@
   align-items: center;
   max-width: 280px;
   text-align: center;
-  overflow: hidden; /* Para que la imagen no sobresalga */
+  overflow: hidden;
+  /* Para que la imagen no sobresalga */
 }
 
 .card img {
   width: 100%;
   height: auto;
-  max-width: 280px; /* Para que todas las imágenes sean iguales */
+  max-width: 280px;
+  /* Para que todas las imágenes sean iguales */
 }
 
 .card-content {
@@ -221,13 +221,51 @@
   margin-top: 0;
 }
 
-.leader-linkedin img{
-    width: 26px;
-    height: 26px;
-    transition: transform 0.2s ease-in-out;
-  }
+.leader-linkedin img {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.2s ease-in-out;
+}
 
 
 .leader-linkedin img:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .comunidad-section {
+    margin: 160px 70px;
+  }
+
+  .grid-item h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .grid-item {
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .comunidad-section {
+    margin: 160px 16px;
+  }
+
+  .grid-item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons-comnidad-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
 }

@@ -7,7 +7,7 @@
     padding: 50px 0;
 }
 
-.fondo-imagen {
+.fondo-imagen-proyectos {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -107,4 +107,40 @@
     text-align: center;
     font-family: 'Manrope';
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .proximamente {
+        font-size: 38px;
+        margin-top: 10px;
+    }
+
+    .proyectos-titulo-section {
+        font-size: 20px;
+        margin-bottom: 3vh;
+    }
+
+    .proyect-section-container {
+        margin: 0 24px;
+    }
+
+    .fondo-imagen-proyectos {
+        left: 65%;
+    }
+}
+
+@media (max-width: 375px) {
+    .proximamente {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .proyectos-titulo-section {
+        font-size: 18px;
+        margin-bottom: 1vh;
+    }
+
+    .proyectos-section {
+        padding: 30px 0;
+    }
 }
