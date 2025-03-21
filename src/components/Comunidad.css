@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Manrope";
-  src: url("../assets/fonts/Manrope/static/Manrope-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-Regular.ttf")
+    format("truetype");
   font-weight: 400;
   /* Regular */
   font-style: normal;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf") format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf")
+    format("truetype");
   font-weight: 500;
   /* Regular */
   font-style: normal;
@@ -16,7 +18,8 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("../assets/fonts/Manrope/static/Manrope-SemiBold.ttf") format("truetype");
+  src: url("../assets/fonts/Manrope/static/Manrope-SemiBold.ttf")
+    format("truetype");
   font-weight: 600;
   /* Medium */
   font-style: normal;
@@ -72,11 +75,13 @@
 .ul-title {
   font-weight: 600;
   font-size: 16px;
-  background: linear-gradient(90deg,
-      #fbd207 0%,
-      #51ff00 32%,
-      #04e9b3 67%,
-      #c156ff 100%);
+  background: linear-gradient(
+    90deg,
+    #fbd207 0%,
+    #51ff00 32%,
+    #04e9b3 67%,
+    #c156ff 100%
+  );
   -webkit-background-clip: text;
   /* Asegura que el gradiente se aplique solo al texto */
   color: transparent;
@@ -170,36 +175,50 @@
 
 .cards-container {
   display: flex;
-  font-family: "Manrope", sans-serif;
-  justify-content: space-between;
-  gap: 100px;
-  /* Espacio entre las cards */
+  justify-content: center; /* Centra las tarjetas en la pantalla */
+  gap: 30px; /* Espacio uniforme entre tarjetas */
   padding: 50px 0;
+  align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 280px;
+  width: 100%; /* Se adaptará al tamaño del contenedor */
+  max-width: 280px; /* Tamaño máximo de la tarjeta */
   text-align: center;
-  overflow: hidden;
-  /* Para que la imagen no sobresalga */
+  flex-grow: 1; /* Hace que las tarjetas se expandan uniformemente */
 }
 
 .card img {
   width: 100%;
   height: auto;
   max-width: 280px;
-  /* Para que todas las imágenes sean iguales */
 }
 
 .card-content {
   background-color: #26272b;
   padding: 15px;
-  border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   text-align: start;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mantiene la estructura interna alineada */
+}
+
+.card-content h3,
+.card-content h4,
+.card-content p {
+  margin: 5px 0;
+  flex-grow: 0;
+}
+
+.leader-linkedin {
+  margin-top: auto; /* Fija el icono de LinkedIn en la parte inferior */
+  display: flex;
 }
 
 .card-content h3 {
@@ -222,50 +241,74 @@
 }
 
 .leader-linkedin img {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   transition: transform 0.2s ease-in-out;
+  margin-top: 10px;
 }
-
 
 .leader-linkedin img:hover {
   transform: scale(1.1);
 }
 
 @media (max-width: 1024px) {
-  .comunidad-section {
-    margin: 160px 70px;
+  .card-content h3 {
+    font-size: 16px;
   }
-
-  .grid-item h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-
-  .grid-item {
-    padding: 10px;
-  }
-
 }
 
 @media (max-width: 768px) {
-  .comunidad-section {
-    margin: 160px 16px;
+  .cards-container {
+    gap: 15px;
+  }
+  .card {
+    max-width: 220px;
+  }
+  .card-content {
+    padding: 10px; /* Reduce el padding en pantallas más pequeñas */
   }
 
-  .grid-item h2 {
+  .leader-linkedin {
+    margin: 0;
+  }
+}
+
+/* ✅ 425px (Móviles grandes) */
+@media (max-width: 425px) {
+  .cards-container {
+    flex-direction: column; /* Las tarjetas se apilan verticalmente */
+    align-items: center;
+  }
+  .card {
+    max-width: 90%; /* Se ajusta al ancho de la pantalla */
+  }
+}
+
+/* ✅ 375px (Móviles medianos) */
+@media (max-width: 375px) {
+  .card {
+    max-width: 100%;
+  }
+  .card-content {
+    padding: 8px;
+  }
+}
+
+/* ✅ 320px (Móviles pequeños) */
+@media (max-width: 320px) {
+  .cards-container {
+    gap: 10px;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .card-content h3 {
     font-size: 18px;
-    margin-bottom: 10px;
   }
-
-  .grid-container{
-    display: flex;
-    flex-direction: column;
+  .card-content h4 {
+    font-size: 14px;
   }
-
-  .buttons-comnidad-container {
-    flex-direction: column;
-    gap: 24px;
+  .card-content p {
+    font-size: 12px;
   }
-
 }

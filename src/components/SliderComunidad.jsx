@@ -125,7 +125,7 @@ function SliderComunidad() {
                   href={miembro.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="icon linkedin-icon"
+                  className="icon_other linkedin-icon"
                 >
                   <img src="/linkedin.webp" alt="Icono de LinkedIn - Conectar con nosotros en LinkedIn" />
                 </a>

@@ -77,13 +77,13 @@
   margin: 0 0 10px 0;
 }
 
-.icon img {
+.icon_other img {
   width: 30px;
   height: 30px;
   transition: transform 0.2s ease-in-out;
   margin-top: 1vh;
 }
 
-.icon img:hover {
+.icon_other img:hover {
   transform: scale(1.1);
 }
