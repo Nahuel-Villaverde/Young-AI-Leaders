@@ -176,7 +176,7 @@
 .cards-container {
   display: flex;
   justify-content: center; /* Centra las tarjetas en la pantalla */
-  gap: 30px; /* Espacio uniforme entre tarjetas */
+  gap: 80px; /* Espacio uniforme entre tarjetas */
   padding: 50px 0;
   align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
 }
@@ -200,8 +200,8 @@
 .card-content {
   background-color: #26272b;
   padding: 15px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   text-align: start;
   flex-grow: 1;
   display: flex;
@@ -255,11 +255,23 @@
   .card-content h3 {
     font-size: 16px;
   }
+
+  .comunidad-section {
+    margin: 160px 110px;
+  }
+
+  .cards-container {
+    gap: 50px;
+  }
 }
 
 @media (max-width: 768px) {
+  .comunidad-section {
+    margin: 160px 60px;
+  }
+
   .cards-container {
-    gap: 15px;
+    gap: 20px;
   }
   .card {
     max-width: 220px;
@@ -278,9 +290,13 @@
   .cards-container {
     flex-direction: column; /* Las tarjetas se apilan verticalmente */
     align-items: center;
+    gap: 50px;
   }
   .card {
     max-width: 90%; /* Se ajusta al ancho de la pantalla */
+  }
+  .comunidad-section {
+    margin: 160px 80px
   }
 }
 
@@ -296,8 +312,8 @@
 
 /* ✅ 320px (Móviles pequeños) */
 @media (max-width: 320px) {
-  .cards-container {
-    gap: 10px;
+  .comunidad-section {
+    margin: 160px 50px;
   }
   .card {
     max-width: 100%;
