@@ -51,46 +51,70 @@ const miembros = [
   },
   {
     id: 8,
+    nombre: "Camila Lescano",
+    img: "/Camila-Lescano.webp",
+    linkedin: "https://www.linkedin.com/in/camilaagostinalescano/",
+  },
+  {
+    id: 9,
+    nombre: "Rocío Palacín",
+    img: "/Rocío-Palacín.webp",
+    linkedin: "https://www.linkedin.com/in/roc%C3%ADo-palac%C3%ADn-roitbarg/",
+  },
+  {
+    id: 10,
     nombre: "Victoria Franco",
     img: "/Victoria-Franco.webp",
     linkedin: "https://www.linkedin.com/in/victoriafranco24/",
   },
   {
-    id: 9,
+    id: 11,
     nombre: "Milagros Singer",
     img: "/Milagros-Singer.webp",
     linkedin: "https://www.linkedin.com/in/milagros-singer-gonzalez/",
   },
   {
-    id: 10,
+    id: 12,
     nombre: "Mathias Ramos Cuñarro",
     img: "/Mathias-Ramos-Cuñarro.webp",
     linkedin: "https://www.linkedin.com/in/mathiasramosc/",
   },
   {
-    id: 11,
+    id: 13,
     nombre: "Julián Asinsten",
     img: "/Julián-Asinsten.webp",
     linkedin: "https://www.linkedin.com/in/juli%C3%A1n-asinsten-247636261/",
   },
   {
-    id: 12,
+    id: 14,
     nombre: "Lucía Scorzelli",
     img: "/Lucía-Scorzelli.webp",
     linkedin:
       "https://www.linkedin.com/in/lucia-scorzelli-vald%C3%A9s-09398a233/",
   },
   {
-    id: 13,
+    id: 15,
     nombre: "Agustín Fernandes",
     img: "/Agustín-Fernandes.webp",
     linkedin: "https://www.linkedin.com/in/agustinjoelfernandescabal/",
   },
   {
-    id: 14,
+    id: 16,
     nombre: "Candela Sosa Medina",
     img: "/Candela-Sosa-Medina.webp",
     linkedin: "https://www.linkedin.com/in/candela-sosa-medina-618224354/",
+  },
+  {
+    id: 17,
+    nombre: "Camila Lescano",
+    img: "/Camila-Lescano.webp",
+    linkedin: "https://www.linkedin.com/in/camilaagostinalescano/",
+  },
+  {
+    id: 18,
+    nombre: "Rocío Palacín",
+    img: "/Rocío-Palacín.webp",
+    linkedin: "https://www.linkedin.com/in/roc%C3%ADo-palac%C3%ADn-roitbarg/",
   },
 ];
 

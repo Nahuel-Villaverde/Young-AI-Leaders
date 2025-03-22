@@ -87,3 +87,26 @@
 .icon_other img:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 425px) {
+  .cardSlider {
+    max-width: 180px;
+  }
+
+  .cardSlider img {
+    max-width: 180px;
+  }
+
+  .cardSlider-content {
+    padding: 10px;
+  }
+
+  .cardSlider-content h3 {
+    font-size: 14px;
+  }
+
+  .icon_other img {
+    width: 24px;
+    height: 24px;
+  }
+}

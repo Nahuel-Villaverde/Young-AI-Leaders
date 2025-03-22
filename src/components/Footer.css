@@ -19,7 +19,7 @@
   background-color: #ffffff;
   position: relative;
   width: 100%;
-  height: 422px;
+  min-height: 422px; /* ✅ Se adapta al contenido */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,3 +160,4 @@
 .logo-color {
   width: 100px;
 }
+

@@ -242,68 +242,99 @@
   letter-spacing: 0.6px;
 }
 
-@media (max-width: 1024px){
-  .cardDescription{
-      font-size: 12px;
-      width: auto;
+@media (max-width: 1024px) {
+  .cardDescription {
+    font-size: 12px;
+    width: auto;
   }
 
-  .item{
+  .item {
     padding-right: 2.5vw;
   }
 
-  .cardHeader{
+  .cardHeader {
     font-size: 18px;
     text-align: left;
   }
 
-  .cardHeader h3{
+  .cardHeader h3 {
     width: 165px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 1010px) {
+  .cardDescription {
+    font-size: 16px;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+
+  .item {
+    max-width: 100%;
+    height: auto;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-bottom: 25vh;
+  }
+
+  .cardDescription {
+    width: auto;
+    padding: 0 2vw;
+  }
+
+  .cardHeader h3 {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .cardNumber {
+    font-size: 128px;
+  }
+
+  .item-3 {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .leftDescription {
+    max-width: 45vw;
+  }
+}
+
+@media (max-width: 720px) {
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
-  .item-2 {
-    align-items: center;
+  .item {
+    max-width: 70%;
+    padding: 0vh 4vw 25vh 4vw;
+    height: auto;
   }
 
-  .title {
-    font-size: 38px;
-    margin-top: 10vh;
-  }
-
-  .subtitle {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .leftDescription {
-    max-width: 75vw;
+  .cardHeader h3 {
+    font-size: 16px;
   }
 
   .cardDescription {
-    padding-left: 4vw;
-    margin-top: 1vh;
+    font-size: 14px;
+    padding: 0;
+    width: 100%;
   }
 
-  .cardHeader {
-    padding-left: 4vw;
-  }
-}
-
-@media (max-width: 375px) {
-  .title {
-    font-size: 32px;
+  .cardNumber {
+    font-size: 128px;
   }
 
-  .subtitle {
-    font-size: 12px;
+  .ctaButton {
+    width: 100%;
+    max-width: 180px;
+    margin-top: 4vh;
   }
 }

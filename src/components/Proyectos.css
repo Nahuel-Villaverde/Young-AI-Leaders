@@ -1,146 +1,189 @@
+@font-face {
+  font-family: "Manrope_Medium";
+  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf")
+    format("truetype");
+  font-weight: 600;
+  /* Medium */
+  font-style: normal;
+}
+
 .proyectos-section {
-    background-color: #FFFFFF;
-    position: relative;
-    /* Para posicionar la imagen centrada */
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
+  background-color: #ffffff;
+  position: relative;
+  /* Para posicionar la imagen centrada */
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 .fondo-imagen-proyectos {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 100%;
-    /* Igual al fondo blanco */
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    /* Para que quede detrás del contenido */
-    opacity: 0.09;
-    /* Ajusta la opacidad si quieres que sea un fondo decorativo */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  /* Igual al fondo blanco */
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  /* Para que quede detrás del contenido */
+  opacity: 0.09;
+  /* Ajusta la opacidad si quieres que sea un fondo decorativo */
 }
 
 .proyect-section-container {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    margin: 0 70px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    /* Para que el contenido esté por encima de la imagen */
-    display: flex;
-    flex-direction: column;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  margin: 0 70px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  /* Para que el contenido esté por encima de la imagen */
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
 }
 
 .proyectos-titulo-section {
-    cursor: default;
-    margin: 0;
-    font-weight: 700;
-    font-size: 38px;
-    color: #000000;
-    padding-top: 0;
-    margin-bottom: 3vh;
+  cursor: default;
+  margin: 0;
+  font-weight: 700;
+  font-size: 38px;
+  color: #000000;
+  padding-top: 0;
+  margin-bottom: 3vh;
 }
 
 .proyect h3 {
-    font-size: 28px;
-    color: #000000;
-    margin-top: 0;
-    margin-bottom: 0;
+  font-size: 28px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .proyect p {
-    font-size: 13px;
-    color: #000000;
-    margin-top: 6px;
+  font-size: 13px;
+  color: #000000;
+  margin-top: 6px;
 }
 
 .proyects-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 0 70px;
-    /* Mantiene 70px de separación con los bordes */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 70px;
+  /* Mantiene 70px de separación con los bordes */
 }
 
 .proyect {
-    flex-grow: 1;
-    /* Permite que los productos crezcan y aumente la separación */
-    max-width: 400px;
-    /* Evita que los productos se expandan demasiado */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  flex-grow: 1;
+  /* Permite que los productos crezcan y aumente la separación */
+  max-width: 400px;
+  /* Evita que los productos se expandan demasiado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-
-
 .proyect img {
-    width: 100%;
-    max-height: 200px;
-    /* Evita que crezca indefinidamente */
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  max-height: 200px;
+  /* Evita que crezca indefinidamente */
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .button-proyect {
-    align-items: center;
-    background-color: #FBD207;
-    color: black;
-    font-weight: 600;
-    width: 30vw;
-    margin-top: 30px;
-    align-self: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  align-items: center;
+  background-color: #fbd207;
+  color: black;
+  font-weight: 600;
+  width: 30vw;
+  margin-top: 30px;
+  align-self: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button-proyect:hover {
-    background-color: black;
-    color: white;
-    border: none;
+  background-color: black;
+  color: white;
+  border: none;
 }
 
-.proximamente{
-    color: black;
-    font-size: 64px;
-    text-align: center;
-    font-family: 'Manrope';
-    margin-top: 20px;
+.proximamente {
+  color: black;
+  font-size: 64px;
+  text-align: center;
+  font-family: "Manrope";
+  margin-top: 20px;
+}
+
+.socios-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50vw;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.socio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  justify-content: center;
+}
+
+.logo-socio-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo-socio-img:hover {
+  transform: scale(1.05);
+}
+
+.nombre-socio {
+  margin-top: 10px;
+  font-family: "Manrope_Medium";
+  font-size: 16px;
+  color: black;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-    .proximamente {
-        font-size: 38px;
-        margin-top: 10px;
-    }
+  .proximamente {
+    font-size: 38px;
+    margin-top: 10px;
+  }
 
-    .proyectos-titulo-section {
-        font-size: 20px;
-        margin-bottom: 3vh;
-    }
+  .proyectos-titulo-section {
+    font-size: 20px;
+    margin-bottom: 3vh;
+  }
 
-    .proyect-section-container {
-        margin: 0 24px;
-    }
+  .proyect-section-container {
+    margin: 0 24px;
+  }
 
-    .fondo-imagen-proyectos {
-        left: 65%;
-    }
+  .fondo-imagen-proyectos {
+    left: 65%;
+  }
 }
 
 @media (max-width: 375px) {
-    .proximamente {
-        font-size: 28px;
-        margin-top: 10px;
-    }
+  .proximamente {
+    font-size: 28px;
+    margin-top: 10px;
+  }
 
-    .proyectos-titulo-section {
-        font-size: 18px;
-        margin-bottom: 1vh;
-    }
+  .proyectos-titulo-section {
+    font-size: 18px;
+    margin-bottom: 1vh;
+  }
 
-    .proyectos-section {
-        padding: 30px 0;
-    }
+  .proyectos-section {
+    padding: 30px 0;
+  }
 }
