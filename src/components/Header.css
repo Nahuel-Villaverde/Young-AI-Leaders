@@ -44,7 +44,7 @@
 }
 
 .nav-item {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
@@ -54,8 +54,8 @@
 }
 
 .nav-item:hover {
-  color: #FBD207;
-  text-shadow: 0px 0px 10px #FBD20759;
+  color: #fbd207;
+  text-shadow: 0px 0px 10px #fbd20759;
 }
 
 .menu-icon {
@@ -115,7 +115,7 @@
   }
 
   .nav-item:hover {
-    color: #FBD207;
+    color: #fbd207;
   }
 
   .menu-icon {
@@ -127,6 +127,14 @@
     cursor: pointer;
     color: white;
   }
+
+  .menu-icon {
+    right: 15px;
+  }
+
+  .header {
+    padding: 5px 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -134,7 +142,7 @@
     width: 35%;
   }
 
-  .logo-container{
+  .logo-container {
     width: 60px;
     height: auto;
   }
@@ -160,4 +168,3 @@
     width: 45%;
   }
 }
-

@@ -286,17 +286,29 @@
 }
 
 /* ✅ 425px (Móviles grandes) */
-@media (max-width: 425px) {
+@media (max-width: 640px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
   .cards-container {
     flex-direction: column; /* Las tarjetas se apilan verticalmente */
     align-items: center;
     gap: 50px;
   }
+  
   .card {
     max-width: 90%; /* Se ajusta al ancho de la pantalla */
   }
+  
   .comunidad-section {
-    margin: 160px 80px
+    margin: 160px 80px;
+  }
+
+  .buttons-comnidad-container {
+    flex-direction: column;
   }
 }
 

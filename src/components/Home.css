@@ -1,189 +1,182 @@
 @font-face {
-    font-family: 'Manrope';
-    src: url('../assets/fonts/Manrope/static/Manrope-Medium.ttf') format('truetype');
-    font-weight: 500;
-    /* Regular */
-    font-style: normal;
+  font-family: "Manrope";
+  src: url("../assets/fonts/Manrope/static/Manrope-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  /* Regular */
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('../assets/fonts/Manrope/static/Manrope-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    /* Medium */
-    font-style: normal;
+  font-family: "Manrope";
+  src: url("../assets/fonts/Manrope/static/Manrope-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  /* Medium */
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('../assets/fonts/Manrope/static/Manrope-Bold.ttf') format('truetype');
-    font-weight: 700;
-    /* SemiBold */
-    font-style: normal;
+  font-family: "Manrope";
+  src: url("../assets/fonts/Manrope/static/Manrope-Bold.ttf") format("truetype");
+  font-weight: 700;
+  /* SemiBold */
+  font-style: normal;
 }
 
 .home-container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url('/fondo-home2.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: flex-start;
+  position: relative;
+  height: 1024px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/fondo-home2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .image-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url('/fondoA.png');
-    background-size: cover;
-    background-position: right center; /* Mantiene la parte derecha visible */
-    background-repeat: no-repeat;
-    z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1024px;
+  width: 100vw;
+  background-image: url("/fondoA.png");
+  background-size: cover;
+  background-position: right center; /* Mantiene la parte derecha visible */
+  background-repeat: no-repeat;
+  z-index: 2;
 }
-
 
 .home-content {
-    font-family: 'Manrope', sans-serif;
-    z-index: 3;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 70px;
+  font-family: "Manrope", sans-serif;
+  z-index: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 70px;
 }
 
 .home-title {
-    cursor: default;
-    margin: 0;
-    font-weight: 700;
-    font-size: 58px;
-    color: #FFFFFF;
+  cursor: default;
+  margin: 0;
+  font-weight: 700;
+  font-size: 58px;
+  color: #ffffff;
 }
 
-
-.home-subtitle{
-    font-size: 38px;
-    font-weight: 500;
-    margin-bottom: 2vh;
-}
-
-.home-content h2{
-    font-weight: 500;
-    margin: 0 0 8px 0;
-    font-size: 32px;
-    color: #FFFFFF;
-}
-
-.home-span {
-    font-size: 16px;
-    color: #dadada;
-    font-weight: 700;
-    margin-bottom: 24px;
-}
-
-.home-content button {
-    background-color: #FBD207;
-    color: #000000;
-    font-weight: 700;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.home-content button:hover {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-
-@media (max-width: 1024px) {
-
-.home-container {
-    height: 80vh;
-}
-
-.image-overlay {
-    height: 80vh;
-}
-
-.home-title {
-    font-size: 38px;
-}
-
-.home-subtitle{
-    font-size: 28px;
+.home-subtitle {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 2vh;
 }
 
 .home-content h2 {
-    font-size: 24px;
-    margin: 0;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+  font-size: 32px;
+  color: #ffffff;
 }
 
 .home-span {
-    font-size: 14px;
+  font-size: 16px;
+  color: #dadada;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
 
+.home-content button {
+  background-color: #fbd207;
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-content button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .home-container {
+    height: 768px;
+  }
+
+  .image-overlay {
+    height: 768px;
+  }
+
+  .home-title {
+    font-size: 38px;
+  }
+
+  .home-subtitle {
+    font-size: 28px;
+  }
+
+  .home-content h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .home-span {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
-    .home-content{
-        padding: 0;
-        align-items: center;
-    }
+  .image-overlay {
+    height: 425px;
+  }
 
-    .home-container {
-        justify-content: center;
-        align-items: center;
-    }
-
+  .home-container {
+    height: 425px;
+  }
 }
 
 @media (max-width: 425px) {
-    .image-overlay {
-        background-image: url('/fondo-home-celu.webp');
-    }
+  .image-overlay {
+    background-image: url("/fondo-home-celu.webp");
+  }
 
-    .home-content{
-        padding: 0 24px 0 24px;
-        align-items: center;
-    }
+  .home-content {
+    padding: 0 24px 0 24px;
+    align-items: center;
+  }
 
-    .home-container {
-        justify-content: center;
-        align-items: center;
-    }
-
+  .home-container {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 375px) {
-    .home-title {
-        font-size: 32px;
-    }
+  .home-title {
+    font-size: 32px;
+  }
 
-    .home-subtitle {
-        font-size: 26px;
-    }
+  .home-subtitle {
+    font-size: 26px;
+  }
 
-    .home-content h2 {
-        font-size: 20px;
-    }
+  .home-content h2 {
+    font-size: 20px;
+  }
 
-    .home-span {
-        font-size: 12px;
-    }
+  .home-span {
+    font-size: 12px;
+  }
 
-    .home-content button {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
+  .home-content button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
